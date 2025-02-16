@@ -1,0 +1,43 @@
+# Reading pref.tcl
+# do clock_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/khurt/Downloads/quartus\ codes/lab\ Hws/clock {C:/Users/khurt/Downloads/quartus codes/lab Hws/clock/clock.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:56:46 on Apr 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/khurt/Downloads/quartus codes/lab Hws/clock" C:/Users/khurt/Downloads/quartus codes/lab Hws/clock/clock.v 
+# -- Compiling module clock
+# -- Compiling module Testbench
+# 
+# Top level modules:
+# 	Testbench
+# End time: 16:56:46 on Apr 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.Testbench
+# vsim work.Testbench 
+# Start time: 16:56:51 on Apr 16,2024
+# Loading work.Testbench
+# Loading work.clock
+add wave -position insertpoint  \
+sim:/Testbench/reset \
+sim:/Testbench/count \
+sim:/Testbench/clk
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 16:58:31 on Apr 16,2024, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 0
